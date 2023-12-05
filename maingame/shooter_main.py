@@ -175,41 +175,6 @@ while running:
 
                     add_bullets2(1, pos, angle2)
 
-                # elif event.key == pygame.K_SPACE:
-                #         bullet_sound.play()
-                #         directionx = 1
-                #         directiony = 0
-                #         if player2.move_right() == player2.move_right():
-                #             directionx = 1
-                #             directiony = 0
-                #         elif player2.move_left() == shooter.left_image:
-                #             directionx = -1
-                #             directiony = 0
-                #         elif shooter.image == shooter.up_image:
-                #             directiony = -1
-                #             directionx = 0
-                #         elif shooter.image == shooter.down_image:
-                #             directiony = 1
-                #             directionx = 0
-                #         elif shooter.image == shooter.down_right_image:
-                #             directionx = 1
-                #             directiony = 1
-                #         elif shooter.image == shooter.down_left_image:
-                #             directionx = -1
-                #             directiony = 1
-                #         elif shooter.image == shooter.up_right_image:
-                #             directionx = 1
-                #             directiony = -1
-                #         elif shooter.image == shooter.up_left_image:
-                #             directionx = -1
-                #             directiony = -1
-                #
-                #     bullets2.shoot_down()
-                #     pos = player2.rect.midright
-                #     add_bullets2(1, pos)
-                #     pygame.mixer.Sound.play(pew)
-
-
             elif event.type == pygame.KEYUP:
                 if event.key == pygame.K_UP or event.key == pygame.K_DOWN:
                     player.stop_vertical_movement()
