@@ -27,3 +27,5 @@ class Bullet(pygame.sprite.Sprite):
 
 
 bullets = pygame.sprite.Group()
+
+bullets2 = pygame.sprite.Group()

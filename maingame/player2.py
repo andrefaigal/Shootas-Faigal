@@ -7,7 +7,7 @@ class Player2(pygame.sprite.Sprite):
         super().__init__()
 
         #uploading the png picture of shooter as forward image
-        self.forward_image = pygame.image.load("../assets/sprites/Individual Animations/Handgun1.png").convert()
+        self.forward_image = pygame.image.load("../assets/sprites/Individual Animations/Handgun2.png").convert()
         self.forward_image.set_colorkey((0,0,0))
 
         #makes player to move in directions up, down, left, right

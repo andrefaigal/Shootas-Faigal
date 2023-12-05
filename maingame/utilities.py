@@ -3,8 +3,7 @@ import random
 from game_parameters import *
 from monster import Monster, monsters
 from zombie import Zombie, zombies
-from bullets import Bullet, bullets
-from bullets2 import Bullet2
+from bullets import Bullet, bullets, bullets2
 from hearts import Heart, hearts
 
 def draw_background(screen):
@@ -36,9 +35,9 @@ def add_bullets(num_bullets, pos, angle):
     for _ in range(num_bullets):
         bullets.add(Bullet(pos[0],pos[1], angle))
 
-def add_bullets2(num_bullets,pos):
+def add_bullets2(num_bullets,pos, angle):
     for _ in range(num_bullets):
-        bullets2.add(Bullet2(pos[0],pos[1]))
+        bullets2.add(Bullet(pos[0],pos[1], angle))
 
 def add_hearts(num_hearts):
     for _ in range(num_hearts):

@@ -6,8 +6,7 @@ from math import atan2
 
 #the modules I created with functions and classes that I am importing:
 from game_parameters import *
-from bullets import Bullet, bullets
-from bullets2 import Bullet2, bullets2
+from bullets import Bullet, bullets, bullets2
 from monster import monsters
 from zombie import zombies, Zombie
 from player import Player
@@ -64,6 +63,7 @@ gameover_font = pygame.font.Font("../assets/fonts/Minecraft-Regular.otf", 60)
 score_font = pygame.font.Font("../assets/fonts/Minecraft-Regular.otf", 48)
 time_font = pygame.font.Font("../assets/fonts/Minecraft-Regular.otf", 36)
 angle = 0
+angle2 = 0
 score = 0
 
 def draw_welcome(screen):
@@ -162,13 +162,25 @@ while running:
                     player2.move_left()
                 elif event.key == pygame.K_d:
                     player2.move_right()
-
+                elif event.key == pygame.K_w:
+                    player2.move_up()
+                    angle2 = pi / 2
+                elif event.key == pygame.K_s:
+                    player2.move_down()
+                    angle2 = - pi / 2
+                elif event.key == pygame.K_a:
+                    player2.move_left()
+                    angle2 = pi
+                elif event.key == pygame.K_d:
+                    player2.move_right()
+                    angle2 = 0
+w
                 elif event.key == pygame.K_SPACE:
                     pygame.mixer.Sound.play(pew)
                     pos = player2.rect.midright
                     mouse_x, mouse_y = pygame.mouse.get_pos()
                     angle = - atan2(mouse_y - player2.y, mouse_x - player2.x)
-                    add_bullets2(1, pos)
+                    add_bullets2(1, pos, angle2)
 
                 # elif event.key == pygame.K_SPACE:
                 #         bullet_sound.play()
