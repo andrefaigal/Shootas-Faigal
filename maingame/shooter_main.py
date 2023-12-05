@@ -11,7 +11,7 @@ from monster import monsters
 from zombie import zombies, Zombie
 from player import Player
 from player2 import Player2
-from hearts import hearts, Heart
+from hearts import hearts, Heart #hearts
 from utilities import draw_background, add_monsters, add_zombies, add_bullets, add_bullets2
 
 # initialize Pygame, it starts all of the game
