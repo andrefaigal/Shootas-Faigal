@@ -2,7 +2,7 @@ import pygame
 import random
 import time
 import sys
-from math import atan2
+from math import atan2, pi
 
 #the modules I created with functions and classes that I am importing:
 from game_parameters import *
@@ -156,14 +156,6 @@ while running:
                     player.move_right()
                 elif event.key == pygame.K_w:
                     player2.move_up()
-                elif event.key == pygame.K_s:
-                    player2.move_down()
-                elif event.key == pygame.K_a:
-                    player2.move_left()
-                elif event.key == pygame.K_d:
-                    player2.move_right()
-                elif event.key == pygame.K_w:
-                    player2.move_up()
                     angle2 = pi / 2
                 elif event.key == pygame.K_s:
                     player2.move_down()
@@ -174,12 +166,13 @@ while running:
                 elif event.key == pygame.K_d:
                     player2.move_right()
                     angle2 = 0
-w
+
                 elif event.key == pygame.K_SPACE:
                     pygame.mixer.Sound.play(pew)
                     pos = player2.rect.midright
                     mouse_x, mouse_y = pygame.mouse.get_pos()
                     angle = - atan2(mouse_y - player2.y, mouse_x - player2.x)
+
                     add_bullets2(1, pos, angle2)
 
                 # elif event.key == pygame.K_SPACE:
