@@ -1,4 +1,4 @@
-Objective: 
+**Objective:** 
 Two-Player game, you shoot the enemies that try to kill you. 
 
 player1:
@@ -21,7 +21,7 @@ functions that are included:
 - tricky trig: the monster follows the player
 - shooter: shooting function for both players
 - terminator: the monster that follows player 1
-- helping hand: helped classmates Maddion Villanueva, Grant Kimball, Alex Dachos
+- helping hand: helped classmates Madison Villanueva, Grant Kimball, Alex Dachos
 - textual: the words the pop up
 - shifting screens: main menu, loading screen
 - tick tock: time displayed at the top left  
